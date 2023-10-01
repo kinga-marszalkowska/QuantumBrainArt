@@ -96,8 +96,8 @@ const verifyEnvs = (email, password, deviceId) => {
     const calmSubscription = neurosity.calm().subscribe((calm) => {
       hue = Math.pow(1/calm.probability, 2);
       console.log(calm.probability);
-      maxYchange = 100 * calm.probability+0.1;
-      rotStripe += calm.probability+0.1;
+      // maxYchange = 100 * calm.probability+0.1;
+      // rotStripe += calm.probability+0.1;
     });
     // calmSubscription.unsubscribe();
 
